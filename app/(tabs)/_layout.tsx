@@ -29,14 +29,16 @@ function TabIcon({ focused, icon, title }: any) {
 
 export default function _Layout() {
     return (
-        <Tabs>
+        <Tabs
+        
+        >
             <Tabs.Screen
                 name='index'
                 options={{
                     title: "Home",
                     headerShown: false,
                     tabBarIcon: ({ focused }) => (
-                        <TabIcon focused={focused} icon={icons.home} title="Home"  />
+                        <TabIcon focused={focused} icon={icons.home} title="Home" />
                     )
                 }}
             />
@@ -46,7 +48,7 @@ export default function _Layout() {
                     title: "Saved",
                     headerShown: false,
                     tabBarIcon: ({ focused }) => (
-                        <TabIcon focused={focused} icon={icons.save} title="Saved"  />
+                        <TabIcon focused={focused} icon={icons.save} title="Saved" />
                     )
                 }}
             />
@@ -56,7 +58,7 @@ export default function _Layout() {
                     title: "Search",
                     headerShown: false,
                     tabBarIcon: ({ focused }) => (
-                        <TabIcon focused={focused} icon={icons.search} title="Search"  />
+                        <TabIcon focused={focused} icon={icons.search} title="Search" />
                     )
                 }}
             />
@@ -66,7 +68,7 @@ export default function _Layout() {
                     title: "Profile",
                     headerShown: false,
                     tabBarIcon: ({ focused }) => (
-                        <TabIcon focused={focused} icon={icons.person} title="Profile"  />
+                        <TabIcon focused={focused} icon={icons.person} title="Profile" />
                     )
                 }}
             />
